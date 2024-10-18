@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 
 <css>
-
     <style>
+        p {
+            /* set default text attributes */
+            font-family: 'Times New Roman';
+            font-size: medium;
+            color: black;
+            /* set default margins to zero */
+            margin-top: 0px;
+            margin-bottom: 0px;
+            /* set default padding */ 
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-left: 5px;
+            padding-right: 5px;
+            /* set alignment */
+            vertical-align: auto;
+        }
 
-        .subscribe-button {
-            background-color: rgb(200, 0 0);
-            color: white;
-            border: none;
-            margin-right: 20px;
-            height: 75px;
-            width: 115px;
-            transition: opacity 0.15s;
-            border-radius: 15px;
+        .header {
+            font-size:xx-large;
+            text-align: center;
+        }
+
+        .link {
+            color: rgb(0, 89, 204);
+            transition: color 0.15s;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+            color: rgb(15, 117, 250);
             cursor: pointer;
         }
 
-        .subscribe-button:hover {
-            opacity: 0.75;
+        .link:active {
+            text-decoration: none;
+            color: rgb(168, 205, 255);
         }
 
-        .subscribe-button:active {
-            opacity: 0.25;
+        .red-section {
+            .header;
+            padding-top: 10;
+            padding-bottom: 10;
+            background-color: rgb(240, 86, 86);
+            color: white
         }
-
     </style>
-
 </css>
 
 <html>
+<!-- This is a comment -->
+<p class="header"> <strong>This</strong> <i>is</i> <span class="link">a title</span> </p>
 
-<button class="subscribe-button">SUBSCRIBE
+<p class="red-section"> This is a section </p>
 
 </html>
