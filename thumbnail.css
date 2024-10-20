@@ -1,0 +1,49 @@
+:root {
+    --video-preview-size: 20em;
+}
+
+/* 2X1 Vector for thumbnail, and video-info */
+.video-grid {
+    display: grid;
+    width: calc(var(--video-preview-size));
+    row-gap: calc(0.02*var(--video-preview-size));
+}
+
+ /* 1X2 For channel image, and video-description */
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    column-gap: calc(0.05*var(--video-preview-size));
+}
+
+/* 3X1 Vector for video title, channel name, and stats */
+.video-description-grid {
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+}
+
+.thumbnail-img {
+    width: calc(1*var(--video-preview-size));
+}
+
+.channel-img {
+    width: calc(0.1*var(--video-preview-size));
+}
+
+.video-title-text,
+.video-channel-name-text,
+.video-stats-text {
+    font-family: Roboto, 'Times New Roman', Times, serif;
+    margin-top: 0;
+    margin-bottom: 0;
+} 
+
+.video-title-text {
+    font-size: calc(0.06*var(--video-preview-size));
+    font-weight: 500;
+}
+
+.video-channel-name-text,
+.video-stats-text {
+    font-size: calc(0.05*var(--video-preview-size));
+}

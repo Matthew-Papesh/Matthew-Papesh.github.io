@@ -1,59 +1,55 @@
 <!DOCTYPE html>
-
-<css>
-    <style>
-        p {
-            /* set default text attributes */
-            font-family: 'Times New Roman';
-            font-size: medium;
-            color: black;
-            /* set default margins to zero */
-            margin-top: 0px;
-            margin-bottom: 0px;
-            /* set default padding */ 
-            padding-top: 1px;
-            padding-bottom: 1px;
-            padding-left: 5px;
-            padding-right: 5px;
-            /* set alignment */
-            vertical-align: auto;
-        }
-
-        .header {
-            font-size:xx-large;
-            text-align: center;
-        }
-
-        .link {
-            color: rgb(0, 89, 204);
-            transition: color 0.15s;
-        }
-
-        .link:hover {
-            text-decoration: underline;
-            color: rgb(15, 117, 250);
-            cursor: pointer;
-        }
-
-        .link:active {
-            text-decoration: none;
-            color: rgb(168, 205, 255);
-        }
-
-        .red-section {
-            .header;
-            padding-top: 10;
-            padding-bottom: 10;
-            background-color: rgb(240, 86, 86);
-            color: white
-        }
-    </style>
-</css>
-
 <html>
-<!-- This is a comment -->
-<p class="header"> <strong>This</strong> <i>is</i> <span class="link">a title</span> </p>
+    <head>
+        <link rel="stylesheet" href="thumbnail.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="video-grid"> 
+            <div>
+                <img src="thumbnails/thumbnail1.webp" class="video-grid thumbnail-img">
+            </div>
+            <div class="video-info-grid">
+                <div>
+                    <img src="channels/channel1.jpg" class="video-grid channel-img">
+                </div>
+                <div class="video-description-grid">
+                    <div>
+                        <p class="video-title-text"> Best programming language to start with (My 3rd YT Video) </p>
+                    </div>
+                    <div>
+                        <p class="video-channel-name-text"> SuperSimpleDev </p>
+                    </div>
+                    <div>
+                        <p class="video-stats-text"> No Views &#183; 3 years ago </p>
+                    </div>
 
-<p class="red-section"> This is a section </p>
+                </div>
+            </div>
+        </div>
+        <div class="video-grid"> 
+            <div>
+                <img src="thumbnails/thumbnail1.webp" class="video-grid thumbnail-img">
+            </div>
+            <div class="video-info-grid">
+                <div>
+                    <img src="channels/channel1.jpg" class="video-grid channel-img">
+                </div>
+                <div class="video-description-grid">
+                    <div>
+                        <p class="video-title-text"> Best programming language to start with (My 3rd YT Video) </p>
+                    </div>
+                    <div>
+                        <p class="video-channel-name-text"> SuperSimpleDev </p>
+                    </div>
+                    <div>
+                        <p class="video-stats-text"> No Views &#183; 3 years ago </p>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
