@@ -140,7 +140,9 @@ export default function GitHubRepoReadMeViewer({ owner, repo, file, onHeadings }
           width: "70dvw",
         }}
       >
-        <ReactMarkdown rehypePlugins={[rehypeRaw]} components={MarkdownComponents}>
+        <ReactMarkdown 
+          rehypePlugins={[rehypeRaw]} 
+          components={MarkdownComponents}>
           {markdown}
         </ReactMarkdown>
       </div>

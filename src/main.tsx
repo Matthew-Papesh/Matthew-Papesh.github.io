@@ -1,9 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { PrimeReactProvider } from 'primereact/api'
+
 import App from './App.tsx'
+import 'bootstrap/dist/css/bootstrap-grid.min.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <PrimeReactProvider>
+      <App />
+    </PrimeReactProvider>
   </StrictMode>,
 )

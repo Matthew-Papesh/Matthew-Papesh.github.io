@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { useEffect, useState } from "react"
-import { PrimeReactProvider } from "primereact/api"
+import { PrimeReactProvider } from 'primereact/api'
 import './App.css'
 
 import HomePage from "./pages/HomePage"
