@@ -25,7 +25,7 @@ function Section({ title, children, variant = 'main' }: Props) {
                 <h2 id={anchorId} className="title-goldman">
                     {title}
                 </h2>
-                <div className="section-body">
+                <div>
                     {children}
                 </div>
             </Container>
